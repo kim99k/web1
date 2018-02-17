@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+
+ <script src="abc.js">
+ </script>
+     
+</head>
+
+<body> 
+<h1> <a href="ex0.html"> WEB</a> </h1>
+
+  <input type="button" value="black" onClick="
+     var Tar=document.querySelector('body');
+   if(this.value ==='black')
+    {Tar.style.color = 'white';
+    Tar.style.backgroundColor='black';
+    Tar.dataset.mode='night';
+    this.value='day';
+    } 
+    else {
+    Tar.style.color = 'black';
+    Tar.style.backgroundColor='white';
+    Tar.dataset.mode='day';
+    this.value='night'; 
+    }"
+    <br>
+    
+    <input type="button" value="day" onClick="
+    document.querySelector('body').style.backgroundColor='white';
+    document.querySelector('body').style.color = 'black';"> 
+    <input type="button" value="night" onClick="
+    document.querySelector('body').style.color = 'white';
+    document.querySelector('body').style.backgroundColor='black';">
+    
+    <br>
+
+       
+<input type="button" value="day" onClick="
+       daynight(this);">
+      
+      <input type="button" value="night" onClick="
+       daynight(this);">
+       
+<h2> come ! </h2>
+        
+    <ol>
+      <li><a href="ex0.html">HTML</a></li>
+      <li><a href="ex0.html">CSS</a></li>
+      <li><a href="ex0.html">JS</a></li>
+    </ol>
+
+    <script>
+	 var tmem = {
+		 'leader':'kap',
+		 'designer':'ki'		 
+		 };
+		 document.write('leader : '+tmem.leader +'<br>');
+		 document.write('designer : '+tmem.designer +'<br>');
+		 tmen.keeper ="kim";
+		 document.write('keeper :'+tmem.keeper+'<br>');
+		 tmen['data ana'] = 'ho';
+		 document.write('data ana :'+tmen['data ana']+'<br>');
+	</script> 
+      
+</body>
